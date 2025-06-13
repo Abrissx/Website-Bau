@@ -7,59 +7,102 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #222;
+      background-color: #000;
       color: #fff;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
+    }
+    header img {
+      max-width: 200px;
+      margin-bottom: 20px;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
+      letter-spacing: 1px;
     }
     header p {
       font-size: 1.2em;
-      color: #ccc;
+      color: #f7a029;
     }
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
-    }
-    section h2 {
-      color: #222;
-      border-bottom: 2px solid #ff5500;
-      padding-bottom: 10px;
-    }
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
     }
     .services {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      margin-top: 40px;
     }
     .service {
-      background: white;
+      flex: 1 1 45%;
+      background: #f7f7f7;
+      border-left: 5px solid #f7a029;
       padding: 20px;
-      flex: 1 1 300px;
-      border: 1px solid #ddd;
       border-radius: 5px;
+    }
+    .service h3 {
+      margin-top: 0;
+      color: #222;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 48%;
+      border-radius: 5px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    button {
+      padding: 12px;
+      background-color: #f7a029;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+    }
+    a {
+      color: #f7a029;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="https://via.placeholder.com/200x80.png?text=AbrissX+Logo+1" alt="AbrissX Logo">
   <h1>AbrissX Bauservice</h1>
-  <p>Ihr Partner für Abriss, Entkernung und Innenausbau</p>
+  <p>Ihr Partner für Abriss, Entkernung & Innenausbau</p>
 </header>
 
 <section>
@@ -67,31 +110,45 @@
   <div class="services">
     <div class="service">
       <h3>Abrissarbeiten</h3>
-      <p>Sichere und effiziente Abbrucharbeiten von Gebäuden und Anbauten.</p>
+      <p>Vom Einfamilienhaus bis zum Anbau – wir sorgen für den sauberen Rückbau, schnell & sicher.</p>
     </div>
     <div class="service">
       <h3>Entkernung</h3>
-      <p>Komplette Entkernungen für Sanierungen und Neubauten.</p>
+      <p>Komplette Entkernung für Altbauten, Gewerbeobjekte und Sanierungsprojekte.</p>
     </div>
     <div class="service">
       <h3>Trockenbau</h3>
-      <p>Innenausbau mit modernen Trockenbausystemen.</p>
+      <p>Innenausbau mit hochwertigen Materialien für Trennwände, Decken und Akustiklösungen.</p>
     </div>
     <div class="service">
       <h3>Badsanierung</h3>
-      <p>Individuelle Badmodernisierung nach Maß.</p>
+      <p>Von der Rohbauinstallation bis zur finalen Gestaltung – Ihr neues Bad aus einer Hand.</p>
     </div>
   </div>
 </section>
 
 <section>
+  <h2>Impressionen</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/500x300.png?text=Projekt+1" alt="Projekt 1">
+    <img src="https://via.placeholder.com/500x300.png?text=Projekt+2" alt="Projekt 2">
+  </div>
+</section>
+
+<section>
   <h2>Kontakt</h2>
-  <p><strong>Adresse:</strong> Musterstraße 1, 12345 Musterstadt</p>
-  <p><strong>Telefon:</strong> 0123 / 456789</p>
-  <p><strong>Email:</strong> info@abrissx.de</p>
+  <p>Haben Sie Fragen oder möchten Sie ein Angebot? Schreiben Sie uns direkt:</p>
+  <form>
+    <input type="text" name="name" placeholder="Ihr Name" required>
+    <input type="email" name="email" placeholder="Ihre E-Mail" required>
+    <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+    <button type="submit">Nachricht senden</button>
+  </form>
 </section>
 
 <footer>
+  <p>Musterstraße 1 · 12345 Musterstadt · Tel: 0123 / 456789 · E-Mail: info@abrissx.de</p>
+  <p><a href="#">Impressum</a> | <a href="#">Datenschutzerklärung</a></p>
   <p>© 2025 AbrissX Bauservice – Alle Rechte vorbehalten</p>
 </footer>
 
